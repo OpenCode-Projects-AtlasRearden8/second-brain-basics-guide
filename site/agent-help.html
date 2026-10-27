@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optional: Agent Help from Your Notes — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html" class="active">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="optional-agent-help-from-your-notes">Optional: Agent Help from Your Notes</h1>
+<blockquote><p>Your vault is plain files on your own computer. That means a local AI<br>
+agent — running with your permission, on your machine — can read and tidy<br>
+them <em>with</em> you. This is optional. The manual works with zero AI.</p></blockquote>
+<p>Everything before this chapter works with nothing but a folder. This<br>
+chapter is for when you are curious about letting an <strong>AI agent</strong> help —<br>
+safely, with your notes staying yours.</p>
+<h2 id="how-agent-help-works-in-plain-english">How agent help works, in plain English</h2>
+<p>Modern AI assistants can use <strong>tools</strong> through a protocol called<br>
+<strong>Model Context Protocol (MCP)</strong> — see the &lt;a href="glossary.html"&gt;glossary&lt;/a&gt;. An "MCP server"<br>
+is a small program that exposes specific abilities (read your notes,<br>
+search them, move files) to the assistant. You run it locally; your files<br>
+never leave your machine unless the model itself is remote.</p>
+<p>For a notebook-like vault, a minimal <strong>notes-mcp-server</strong> typically offers:</p>
+<ul><li><code>search_notes</code> — find notes matching words (filenames + contents)</li><li><code>read_note</code> — open one note's text</li><li><code>list_recent</code> — show the newest notes (handy for the monthly tidy)</li><li><code>summarize_inbox</code> — a quick digest of what is sitting in <code>00-inbox/</code></li><li><code>move_note</code> — file a note into the right corner, only with your</li></ul>
+<p>  confirmation</p>
+<p>That is a <em>lot</em> of cleanup power for five small tools.</p>
+<h2 id="what-agents-are-actually-good-at-here">What agents are actually good at here</h2>
+<ul><li><strong>Sorting the inbox.</strong> "Here are the five newest notes in my inbox —</li></ul>
+<p>  suggest a destination corner and a better name for each." You approve or<br>
+  reject each suggestion. That is the monthly tidy, on a Tuesday, at half<br>
+  speed.</p>
+<ul><li><strong>Writing hub notes.</strong> "List every note from the last three months and</li></ul>
+<p>  cluster them by theme" — the raw material for &lt;a href="linking-ideas.html"&gt;linking ideas&lt;/a&gt; hubs.</p>
+<ul><li><strong>Finding gaps.</strong> "Which notes promise <code>[[links]]</code> that do not exist</li></ul>
+<p>  yet?" A tidy list of your best unwritten next steps.</p>
+<ul><li><strong>Plain-English recall.</strong> "What did I write in October about handovers?"</li></ul>
+<p>  without opening six files.</p>
+<h2 id="the-rules-of-engagement-non-negotiable">The rules of engagement (non-negotiable)</h2>
+<ol><li><strong>Read-only by default.</strong> Until you trust a setup completely, agent</li></ol>
+<p>   tools should look, not touch.</p>
+<ol><li><strong>You confirm every write.</strong> Move, rename, update — you are the gate.</li><li><strong>Nothing leaves your machine.</strong> Prefer a <em>local</em> model (a small model</li></ol>
+<p>   running on-device) or an assistant configured so your notes are not<br>
+   uploaded to train anything. Check the settings; they matter.</p>
+<ol><li><strong>Backups come first.</strong> Before any agent gets write access, make a copy</li></ol>
+<p>   of the vault. A copy costs ten seconds and guarantees a bad session is<br>
+   undoable.</p>
+<ol><li><strong>Secrets stay out.</strong> Never keep passwords, client details, or patient</li></ol>
+<p>   information in notes an agent might read. For healthcare workers this is<br>
+   the hard rule: use the vault for <em>education and thinking</em>, never for<br>
+   identifiable clinical information. (This whole manual is education, not<br>
+   medical advice — see the README.)</p>
+<h2 id="a-fifteen-line-agent-brief-prompt">A fifteen-line "agent brief" prompt</h2>
+<p>Keep this in your vault as <code>templates/agent-brief.md</code> and paste it before<br>
+asking for help. It keeps any assistant polite and on-task:</p>
+<pre><code>You are helping me tidy a personal knowledge vault.
+- Only use tools on files inside the vault folder.
+- Never delete anything without asking me first.
+- Prefer suggesting renames/moves over doing them; wait for my OK.
+- Keep every name boring and searchable (date-first or type-topic).
+- If uncertain where a note belongs, say so rather than guess.
+- Summarize bold and briefly; no long lectures.
+- Tell me if a task would be faster done by hand.</code></pre>
+<h2 id="do-this-now-optional-010-minutes">Do this now (optional, 0–10 minutes)</h2>
+<ul><li><strong>Skip it:</strong> totally fine — the manual is complete without agents.</li><li><strong>Try it lightly:</strong> if you already have an MCP-enabled assistant, ask it</li></ul>
+<p>  one read-only question: "List the five newest notes in my inbox with a<br>
+  one-line summary of each." That is agent help at its most honest: small,<br>
+  local, and telling you things you half-knew, faster.</p><div class="pagenav"><a href="linking-ideas.html">← Linking Ideas: The Little Web</a><a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html" class="active">Glossary</a></nav>
+</header>
+<h1 id="glossary">Glossary</h1>
+<p>Plain-English definitions of every term used in this manual. Each entry<br>
+explains the idea once, briefly, with an example where it helps.</p>
+<hr>
+<h3 id="agent">Agent (AI agent)</h3>
+<p>An AI assistant that can <em>use tools</em> — read files, search, run small<br>
+commands — rather than only chatting. See &lt;a href="agent-help.html"&gt;agent help&lt;/a&gt;.</p>
+<h3 id="archive">Archive</h3>
+<p>The calm folder for anything finished or cold, organized by year:<br>
+<code>20-archive/2026/</code>. Nothing here needs attention; that is the point. One of<br>
+the &lt;a href="the-four-corners.html"&gt;the four corners&lt;/a&gt;.</p>
+<h3 id="backlink">Backlink</h3>
+<p>The reverse view of a wiki-link: "which notes point <em>at</em> this one?" Apps<br>
+like Obsidian and Zettlr show it automatically. Worth having, not worth<br>
+thirsting for — search does most of the same job.</p>
+<h3 id="daily-note">Daily note (daily landing pad)</h3>
+<p>One file per day, <code>90-daily/2026-10-27.md</code>, that catches everything that<br>
+arrives during the day. The first file you open, the last you close. See<br>
+&lt;a href="the-four-corners.html"&gt;the four corners&lt;/a&gt;.</p>
+<h3 id="fleeting-note">Fleeting note</h3>
+<p>A raw thought in its own file, written in one breath, living in<br>
+<code>00-inbox/</code> until the monthly tidy &lt;a href="monthly-tidy.html"&gt;monthly tidy&lt;/a&gt; promotes, attaches,<br>
+archives, or deletes it. Related: &lt;a href="glossary.html#daily-note"&gt;daily note&lt;/a&gt;.</p>
+<h3 id="front-matter">Front matter</h3>
+<p>A small block of settings at the top of a Markdown file, wrapped in <code>---</code><br>
+lines, often used to record things like type or tags. Optional; plain text<br>
+works without it.</p>
+<h3 id="hub-note">Hub note</h3>
+<p>A list-page that collects <code>[[links]]</code> on one life area (Work, Creations,<br>
+Learning). Handrails for tired days. See &lt;a href="linking-ideas.html"&gt;linking ideas&lt;/a&gt;.</p>
+<h3 id="inbox">Inbox (<code>00-inbox/</code>)</h3>
+<p>The standing pile of &lt;a href="glossary.html#fleeting-note"&gt;fleeting note&lt;/a&gt; files. Allowed to be messy by<br>
+design; kept a puddle, not a bog, by the monthly sweep.</p>
+<h3 id="iso-date">ISO date</h3>
+<p>The <code>YYYY-MM-DD</code> date order (e.g., <code>2026-03-14</code>) that sorts correctly<br>
+everywhere, forever. The only date format this manual uses. See<br>
+&lt;a href="naming-that-survives-years.html"&gt;naming that survives years&lt;/a&gt;.</p>
+<h3 id="local-first">Local-first</h3>
+<p>Software or storage where your files live on <em>your</em> device first, in<br>
+open formats you can open with any tool. The vault's core promise.</p>
+<h3 id="markdown">Markdown</h3>
+<p>A plain-text format where simple symbols mean simple structure: <code>#</code> before<br>
+a line makes a heading, <code>-</code> makes a bullet, <code>**bold**</code> makes bold, and<br>
+<code>[[double brackets]]</code> make wiki-links. Every manual chapter is a Markdown<br>
+file, and every one of them can be read raw as plain text.</p>
+<h3 id="mcp">MCP (Model Context Protocol)</h3>
+<p>A standard way for AI assistants to use small external tools ("servers")<br>
+safely — for example, a notes server that can search and read your vault.<br>
+See &lt;a href="agent-help.html"&gt;agent help&lt;/a&gt;.</p>
+<h3 id="mvp">MVP (minimum viable product)</h3>
+<p>The smallest version of a thing that still does its job. This manual's<br>
+method is deliberately MVP: four folders and one monthly timer.</p>
+<h3 id="notes-mcp-server">Notes-mcp-server</h3>
+<p>A small local tool that gives an &lt;a href="glossary.html#agent"&gt;agent&lt;/a&gt; abilities like <code>search_notes</code>,<br>
+<code>read_note</code>, and <code>move_note</code> over your vault. Optional; see &lt;a href="agent-help.html"&gt;agent help&lt;/a&gt;.</p>
+<h3 id="orphan-note">Orphan note</h3>
+<p>A note with no <code>[[links]]</code> to or from anything. Not a sin — some notes are<br>
+just receipts. During the tidy, give orphans a link if you want them in the<br>
+web.</p>
+<h3 id="plain-text">Plain text</h3>
+<p>Text with no hidden formatting — opens in any editor on any machine, from<br>
+1980 to after. The file types here are <code>.md</code> and <code>.txt</code>.</p>
+<h3 id="project-note">Project note</h3>
+<p>A note (or folder) for something active with an end in sight, living in<br>
+<code>10-projects/</code>, with the next action bolded at the top.</p>
+<h3 id="second-brain">Second brain</h3>
+<p>A trusted external memory — a folder of plain files in your case — that<br>
+remember so you can think. The whole subject of this manual.</p>
+<h3 id="vault">Vault</h3>
+<p>The one folder that contains your whole knowledge base. Any name works;<br>
+this manual's starter calls it <code>my-second-brain/</code>.</p>
+<h3 id="wiki-link">Wiki-link</h3>
+<p>A link between notes written as <code>[[note-title]]</code>. The honest little<br>
+workhorse of &lt;a href="linking-ideas.html"&gt;linking ideas&lt;/a&gt; — and of this manual's own pages.</p><div class="pagenav"><a href="monthly-tidy.html">← The Monthly Fifteen-Minute Tidy</a><span></span></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

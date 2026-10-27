@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Editors: Where to Write — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html" class="active">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="free-editors-where-to-write">Free Editors: Where to Write</h1>
+<blockquote><p>The best editor is the one already open on your machine. Everything below<br>
+is free, local-first, and good enough to last years.</p></blockquote>
+<p>You only need one thing: an app that opens <code>.md</code> and <code>.txt</code> files fast and<br>
+does not get in the way. Here are free options matched to situations, from<br>
+"lowest effort" to "most set-up." All of them work fine with the vault<br>
+folder this manual gives you.</p>
+<h2 id="tier-0-what-is-already-on-your-machine">Tier 0: What is already on your machine</h2>
+<p>Your vault is <em>plain files</em>, so plain text tools already qualify:</p>
+<ul><li><strong>Windows:</strong> Notepad (yes, really) or Notepad++ for a nicer experience.</li><li><strong>macOS:</strong> TextEdit (set it to plain text in preferences) or the free</li></ul>
+<p>  TextMate/CotEditor route.</p>
+<ul><li><strong>Linux:</strong> gedit, Kate, or nano in the terminal.</li><li><strong>Phone:</strong> any notes app that can open files, or nothing at all — phones</li></ul>
+<p>  can be capture-only, and the vault sorts at the desk.</p>
+<p>This tier is perfectly legitimate. "No fancy apps required" is not a<br>
+compromise; it is a feature. If you never leave Tier 0, your system still<br>
+works completely.</p>
+<h2 id="tier-1-markdown-editors-free-local-files">Tier 1: Markdown editors (free, local files)</h2>
+<p>Same files, nicer view: headings hierarchy, clickable links, live word<br>
+counts. Good once you write daily and want comfort.</p>
+<ul><li><strong>VS Code</strong> (Windows/macOS/Linux) — free, extremely common, opens a whole</li></ul>
+<p>  folder so your vault feels like a dashboard. Install the "Markdown All in<br>
+  One" extension for <code>[[wiki-link]]</code> autocompletion comfort.</p>
+<ul><li><strong>Zettlr</strong> (Windows/macOS/Linux) — built exactly for academic-style</li></ul>
+<p>  Markdown with a sidebar of your vault and first-class <code>[[wiki-link]]</code><br>
+  support.</p>
+<ul><li><strong>Obsidian</strong> (Windows/macOS/Linux, free for personal use) — the friendliest</li></ul>
+<p>  GUI for wiki-links, backlinks, and graphs. Local files only; it edits your<br>
+  vault folder directly, so you are never locked in even though it feels<br>
+  like an app.</p>
+<p>For the setup in this manual, <strong>Zettlr or Obsidian are the sweet spots</strong>:<br>
+they treat your folder as plain Markdown (so Tier 0 always still works) and<br>
+they make <code>[[linking-ideas]]</code> feel effortless.</p>
+<h2 id="tier-2-syncing-across-devices-free-routes">Tier 2: Syncing across devices (free routes)</h2>
+<p>Local-first means your files live on your machine first. Syncing is then<br>
+just "make copies reach my other devices," and there are free, boring ways:</p>
+<ul><li><strong>A folder in a sync service</strong> (one that syncs a normal folder) — the</li></ul>
+<p>  vault is just files, so any file-syncing folder works.</p>
+<ul><li><strong>Git</strong> — if you are comfortable with it, a private repo on any host is</li></ul>
+<p>  free versioned backup. Never made public unless you choose to.</p>
+<ul><li><strong>USB/e-mail-to-self</strong> — genuinely. For a daily file of a few kilobytes,</li></ul>
+<p>  this is not silly, it is auditing-light.</p>
+<p>One warning that applies to every tool: <strong>some apps use "their" file types</strong><br>
+(.otl, proprietary databases). If an app cannot show your notes as<br>
+<code>.md</code>/<code>.txt</code> in Finder/File Explorer, it is not local-first. Skip it.</p>
+<h2 id="choosing-in-ten-seconds">Choosing in ten seconds</h2>
+<ul><li>Hate installing things? <strong>Notepad/TextEdit.</strong> Done. Truly.</li><li>Want a little polish? <strong>Zettlr or Obsidian</strong>, mentioned above.</li><li>Already using VS Code for coding or anything else? Open your</li></ul>
+<p>  vault in it. Zero new tools.</p>
+<h2 id="do-this-now-5-minutes">Do this now (5 minutes)</h2>
+<p>Open your vault folder in the editor you will actually use. Type one<br>
+sentence in today's daily file so the app is "warmed" as <em>yours</em>.<br>
+Tomorrow's you will find the file faster because it is no longer the first<br>
+time.</p><div class="pagenav"><a href="tags-vs-folders.html">← Tags vs Folders: An Honest Comparison</a><a href="linking-ideas.html">Linking Ideas: The Little Web →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

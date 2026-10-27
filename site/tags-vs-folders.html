@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tags vs Folders: An Honest Comparison — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html" class="active">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="tags-vs-folders-an-honest-comparison">Tags vs Folders: An Honest Comparison</h1>
+<blockquote><p>Choose one for organizing and the other for describing. That is the whole<br>
+answer; the rest is showing the work.</p></blockquote>
+<p>You will hear strong opinions here: "folders are dead," "tags are chaos,"<br>
+and so on. Both camps are half right. Here is the honest version.</p>
+<h2 id="what-folders-are-good-at">What folders are good at</h2>
+<p>Folders are for <strong>one true home per file</strong>. Strengths:</p>
+<ul><li><strong>Physical, visual, drill-down navigation.</strong> <code>20-archive/2026/</code> reads like</li></ul>
+<p>  an address. No thinking required to browse.</p>
+<ul><li><strong>Easy to move.</strong> Dragging files between systems is easy, and the</li></ul>
+<p>  archive ordering (by year) survives any tool.</p>
+<ul><li><strong>Zero discipline required.</strong> A file <em>is</em> in one place; there is nothing</li></ul>
+<p>  to decide on top of where it lives.</p>
+<ul><li><strong>No vocabulary drift.</strong> No "evergreen" vs "permanent" vs "zettel"</li></ul>
+<p>  splitting one concept into three tags over the years.</p>
+<h2 id="what-folders-are-bad-at">What folders are bad at</h2>
+<p>A file can only sit in one folder. "Multidisciplinary" notes (say, a note on<br>
+<em>scheduling</em> that is relevant to both work and home) can only live at one<br>
+address. Folders express one dimension; life has more.</p>
+<h2 id="what-tags-are-good-at">What tags are good at</h2>
+<p>Tags are <strong>descriptions, like keywords on a book spine</strong>, not locations:</p>
+<ul><li><strong>Many labels, one file.</strong> <code>#healthcare #automation #draft</code> all on one</li></ul>
+<p>  note. Nothing gets filed "wrong."</p>
+<ul><li><strong>Flexible views.</strong> Sum <code>#idea</code> across three years without moving a file.</li><li><strong>Fast to add later.</strong> New facet of meaning = new tag; no re-filing.</li></ul>
+<h2 id="what-tags-are-bad-at">What tags are bad at</h2>
+<ul><li><strong>They rot silently.</strong> Nobody notices you now have <code>machine-learning</code>,</li></ul>
+<p>  <code>ml</code>, and <code>ai-agents</code> as three near-duplicates — until everything looks<br>
+  messy.</p>
+<ul><li><strong>They need pruning</strong> (see the "tag hygiene" section of the</li></ul>
+<p>  &lt;a href="monthly-tidy.html"&gt;monthly tidy&lt;/a&gt;... in spirit — the tidy is where vocabulary drift<br>
+  gets caught).</p>
+<ul><li><strong>They tempt you to organize by tags alone</strong>, which mixes two jobs and</li></ul>
+<p>  does neither: you end up with 200 tags and a home for nothing.</p>
+<h2 id="the-recommended-split">The recommended split</h2>
+<table>
+<thead><tr><th>Job</th><th>Tool</th></tr></thead><tbody>
+<tr><td>Where a file <em>lives</em></td><td><strong>Folders</strong> (the four corners)</td></tr>
+<tr><td>What a file <em>is about</em></td><td><strong>Tags</strong>, used very sparingly</td></tr>
+<tr><td>Where a file <em>connects</em></td><td><strong><code>[[wiki-links]]</code></strong></td></tr>
+</tbody>
+</table>
+<p>Practical tag hygiene (this is the whole ceremony):</p>
+<ol><li><strong>Prefer one broad tag per file</strong>, never a cloud. <code>#idea</code>, <code>#ref</code>,</li></ol>
+<p>   <code>#howto</code>, <code>#person</code>, <code>#healthcare-education</code> — a short fixed menu you do<br>
+   not grow casually.</p>
+<ol><li><strong>The wiki-link is your real connector.</strong> It points at a <em>note</em>, not a</li></ol>
+<p>   word — see &lt;a href="linking-ideas.html"&gt;linking ideas&lt;/a&gt;.</p>
+<ol><li><strong>If you cannot decide a file's home folder, put it in the inbox.</strong></li></ol>
+<p>   Indecision has a room; it does not refuse entry.</p>
+<h2 id="a-real-example">A real example</h2>
+<p>A note about handover emails between nursing shifts:</p>
+<ul><li><strong>Folder (home):</strong> <code>10-projects/2026-11-shift-handover-tool/notes.md</code></li><li><strong>Tags:</strong> none needed, or <code>#idea</code></li><li><strong>Wiki-links:</strong> <code>[[healthcare-education]]</code>, <code>[[agent-skills]]</code></li></ul>
+<p>The folder says where it lives. The links say what it connects. You never<br>
+needed sixteen tags, and future-you can find it by browsing the project,<br>
+searching "handover," or following the links. Three doors, all open.</p>
+<h2 id="do-this-now-1-minute">Do this now (1 minute)</h2>
+<p>Write your tag menu in the front of your daily note under <code>Tag menu:</code> — the<br>
+five or six broad tags you will allow yourself. Done. You have now out-<br>
+tagged most people, permanently.</p><div class="pagenav"><a href="naming-that-survives-years.html">← Naming That Survives Years</a><a href="free-editors.html">Free Editors: Where to Write →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

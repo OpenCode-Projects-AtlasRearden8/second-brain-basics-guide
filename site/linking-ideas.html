@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linking Ideas: The Little Web — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html" class="active">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="linking-ideas-the-little-web">Linking Ideas: The Little Web</h1>
+<blockquote><p>A note that connects to nothing is a stone. A note linked to two others<br>
+is a conversation. Ten linked notes are a second brain starting to hum.</p></blockquote>
+<p>Plain files become powerful the moment they point at each other. This<br>
+chapter shows the smallest possible way to do that: <strong>wiki-style links</strong>,<br>
+written as <code>[[something]]</code>, in any editor, with zero setup.</p>
+<h2 id="what-a-wiki-link-looks-like">What a wiki-link looks like</h2>
+<p>Anywhere in a note, write the title of another note in double brackets:</p>
+<pre><code>Read [[the-four-corners]] before the [[monthly-tidy]].</code></pre>
+<p>When the files are served as HTML by this manual's build system, those<br>
+double brackets become real, clickable links between the pages. In<br>
+Obsidian or Zettlr, typing <code>&lt;span class=&quot;promised&quot;&gt;[[</code> pops up suggestions from your vault as you<br>
+type. In Notepad they are just text that your <em>eyes</em> (and Ctrl+F) can<br>
+follow. All three behaviors are correct. The format is durable either way.</p>
+<h2 id="two-kinds-of-links-one-habit">Two kinds of links, one habit</h2>
+<h3>1. Links that point <em>at real notes</em></h3>
+<pre><code>[[2026-10-27]]  ← links to the daily landing pad for that day
+[[pharmacy-refill-loop]] ← links to a note you have or will write</code></pre>
+<h3>2. Links that "point at notes you have not written yet"</h3>
+<p>This is the trick that feels like magic. You can write<br>
+<code>[[evergreen-note]]&lt;/span&gt;</code> knowing no file has that name yet. You have then made<br>
+a <strong>promise</strong>: there is a page with that title, and past-you wrote a<br>
+sentence pointing at it. When you later write that note — even months<br>
+later, out of the blue — the link lights up. This is the cheapest most<br>
+people ever pay for a "knowledge graph."</p>
+<h2 id="why-links-beat-tags-for-connecting">Why links beat tags for connecting</h2>
+<p>From the [[tags-vs-folders]] chapter: tags describe; links <strong>connect</strong>.<br>
+A wiki-link remembers <em>context</em>: the sentence around it says <em>why</em> you<br>
+linked. Six months later you do not just find related notes — you find<br>
+your <em>thinking</em> about why they are related. That is the part worth gold.</p>
+<h2 id="building-a-note-that-wants-to-be-a-hub">Building a note that wants to be a hub</h2>
+<p>The most powerful pattern in this manual costs eleven words:</p>
+<blockquote><p>When a new idea arrives, write it, then ask: *what does this remind me<br>
+of?*</p></blockquote>
+<p>Then add 1–3 links. Over weeks, some notes naturally accumulate links and<br>
+become <strong>hub notes</strong> (sometimes called "maps of content" or "index notes").<br>
+A hub note is just a page with a list:</p>
+<pre><code># Projects hub
+- [[2026-11-kdp-paperback]] — the book checklist
+- [[shift-handover-tool]] — nursing + automation crossover idea
+- [[investment-calm-plan]] — the boring-account setup</code></pre>
+<p>Keep 2–4 hub notes for the big areas of life (Work, Health/Life, Creations,<br>
+Learning). They are handrails; you will use them on tired days instead of<br>
+searching.</p>
+<h2 id="honest-dos-and-do-nots">Honest do's and do-nots</h2>
+<ul><li><strong>Do</strong> link freely, even lazily. A broken-but-promising link is fine.</li><li><strong>Do</strong> keep link titles short and stable ([[monthly-tidy]] covers the</li></ul>
+<p>  style) — stable titles make links survive renames.</p>
+<ul><li><strong>Do not</strong> fear orphan notes (notes with no links). Some are just</li></ul>
+<p>  receipts, and receipts are fine.</p>
+<ul><li><strong>Do not</strong> try to build a "system" of links before writing lots of</li></ul>
+<p>  notes. Links grow downward like roots, not up like scaffolding.</p>
+<h2 id="do-this-now-4-minutes">Do this now (4 minutes)</h2>
+<p>Open today's daily note. Write two <code>&lt;span class=&quot;promised&quot;&gt;[[links]]&lt;/span&gt;</code> to anything — one to a note<br>
+that exists, one to a note that does not yet. That second link is your<br>
+first promise, and the whole web starts from there.</p><div class="pagenav"><a href="free-editors.html">← Free Editors: Where to Write</a><a href="agent-help.html">Optional: Agent Help from Your Notes →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

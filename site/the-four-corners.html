@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Four Corners — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html" class="active">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="the-four-corners">The Four Corners</h1>
+<p>Every note you will ever keep fits into one of four homes. Four is small<br>
+enough to remember on a bad day, which is the whole point.</p>
+<h2 id="1-the-daily-landing-pad-90-daily">1. The daily landing pad (<code>90-daily/</code>)</h2>
+<p>One file per day, named like <code>2026-10-27.md</code>. It is the first thing you open<br>
+and the last thing you close. Anything that arrives in your head during the<br>
+day lands here:</p>
+<ul><li>things someone told you</li><li>a half-formed idea from the shower</li><li>"call the pharmacy" / "look up that word"</li><li>the link your friend sent at 22:41</li></ul>
+<p>Think of it as the reception desk. Reception does not sort the mail. It just<br>
+catches everything so nothing is lost. At any point (same day is fine, week<br>
+is fine) you copy the bits that matter onward to their real homes — or let<br>
+the &lt;a href="monthly-tidy.html"&gt;monthly tidy&lt;/a&gt; sweep handle it.</p>
+<p>Starter templates live in your vault under <code>templates/</code>, including a<br>
+&lt;a href="glossary.html#daily-note"&gt;daily note&lt;/a&gt; template.</p>
+<h2 id="2-fleeting-notes-00-inbox">2. Fleeting notes (<code>00-inbox/</code>)</h2>
+<p>Also called a "flea circus" in some books — you may prefer "raw thoughts."<br>
+Fleeting notes are for when a thought is too big for today's page or too<br>
+small for a project: one idea, one file, written in one breath.</p>
+<p>Rules (and they are gentle):</p>
+<ul><li>Name can be rough: <code>idea-shift-handoffs.md</code>, <code>wants-ui-like-a-game.md</code>.</li><li>No formatting rules at all. Bullet soup is a valid literary form.</li><li>The inbox is allowed to be messy. It is a puddle, not a library.</li><li>Anything still sitting there after a month either becomes a real note,</li></ul>
+<p>  gets archived, or gets deleted. All three outcomes are wins.</p>
+<p>The inbox and the daily note do overlap, and that is fine. Use the daily<br>
+landing pad when a thought arrives mid-day; use the inbox when you sit down<br>
+to dump several at once (before bed, after a meeting, end of shift).</p>
+<h2 id="3-project-notes-10-projects">3. Project notes (<code>10-projects/</code>)</h2>
+<p>A project is <em>anything with an outcome and an end</em>: plan a move, write a<br>
+chapter, renew a license, rebuild the website, prep for a certification.<br>
+Each project gets one folder (or one file if it is small) with a date<br>
+prefix, like <code>2026-11-kdp-paperback-checklist.md</code>.</p>
+<ul><li>Keep <strong>few</strong> projects in here — five or six active, max. More than that</li></ul>
+<p>  and the shelf stops helping.</p>
+<ul><li>Everything else waits or lives in the archive. Out of sight is not out of</li></ul>
+<p>  mind when you can trust the archive.</p>
+<ul><li>Inside a project note, put the next action at the top, in bold. When you</li></ul>
+<p>  reopen the file in three weeks, you should not have to reverse-engineer<br>
+  where you were. Future-you is a friendly stranger who needs a handover<br>
+  note.</p>
+<h2 id="4-the-archive-20-archive">4. The archive (<code>20-archive/</code>)</h2>
+<p>Where finished projects and old-but-worth-keeping notes go, organized by<br>
+year: <code>20-archive/2026/</code>. Nothing in the archive needs attention, which<br>
+makes it the calmest folder you own.</p>
+<ul><li>When a project ends: move it in, one drag. Do not archive "someday" —</li></ul>
+<p>  just date it and put it in.</p>
+<ul><li>Archive with confidence: references, past-jobs, course notes, receipts of</li></ul>
+<p>  thought. If you never need them, they cost nothing to keep. If you do<br>
+  need them, <code>Ctrl+F</code> still works.</p>
+<h2 id="why-not-one-big-pile">Why not one big pile?</h2>
+<p>Because "everything in one folder" turns file search into an archaeology<br>
+dig. Four corners give your brain four <em>doors</em>, and doors beat drawers. You<br>
+will know within two seconds which door a new thought belongs behind, and<br>
+if you do not, the daily note catches it — sorting is the machine's job or<br>
+future-you's job, not present-you's job.</p>
+<h2 id="do-this-now-5-minutes">Do this now (5 minutes)</h2>
+<p>Inside your vault folder, make:</p>
+<pre><code>my-second-brain/
+  00-inbox/
+  10-projects/
+  20-archive/
+  90-daily/
+  90-daily/2026-10-27.md   ← today&#x27;s landing pad</code></pre>
+<p>Write one line in today's daily note: <code>Today I started a second brain.</code></p>
+<p> fancier than that is not required. It counts. It is the whole system<br>
+already — just empty.</p><div class="pagenav"><a href="start-here.html">← Start Here</a><a href="naming-that-survives-years.html">Naming That Survives Years →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

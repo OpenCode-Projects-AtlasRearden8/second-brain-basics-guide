@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naming That Survives Years — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html" class="active">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="naming-that-survives-years">Naming That Survives Years</h1>
+<blockquote><p>File names are the cheapest database you will ever own. A good name is a<br>
+search bar that works even when the power is out.</p></blockquote>
+<p>Your future self meets your files through three doors: <strong>the eye</strong> (different<br>
+systems), <strong>search</strong> (typing what it might be called), and <strong>history</strong><br>
+(browsing a folder a year later). A survival-tested name serves all three.<br>
+Here are the rules — few, boring, and they work.</p>
+<h2 id="the-rules">The rules</h2>
+<h3>1. Name for search, not for looks</h3>
+<p>Write the words you would <em>actually type</em> when looking for it. "Pharmacy<br>
+receipt March" beats "receipts_final_v2" (which loses to "receipts_march" in a fair fight,<br>
+every time).</p>
+<h3>2. Dates, when dates matter, in ISO order</h3>
+<p><code>2026-03-14</code> — year first, always. It sorts correctly forever. No other<br>
+format does. Use dates on:</p>
+<ul><li>daily notes (<code>2026-03-14.md</code>)</li><li>projects (<code>2026-04-dissertation.md</code>)</li><li>anything financial, medical, or legal (which is also "anything, later")</li></ul>
+<h3>3. Prefixes when sequence matters</h3>
+<p>Numbers sort before letters, so use prefixes to keep related files in<br>
+reading order:</p>
+<pre><code>2026-10-client-handbook/
+  01-outline.md
+  02-draft.md
+  03-feedback.md</code></pre>
+<h3>4. Boring beats clever</h3>
+<p><code>protein-notes.md</code> will still be findable in 2031. <code>🧠💪 gains.md</code> will be a<br>
+mystery. Emojis, code names, and jokes age like milk. Save them for the<br>
+<em>contents</em> — names should be the label on the outside of the box.</p>
+<h3>5. One idea, one name, few words</h3>
+<p>Aim for 2–5 words. If the name runs long, the file is probably two files or<br>
+the idea is not clear yet — either is fine, just say so in the name:<br>
+<code>idea-unsynced-handoffs.md</code>.</p>
+<h2 id="worked-examples">Worked examples</h2>
+<table>
+<thead><tr><th>Instead of</th><th>Write</th><th>Why</th></tr></thead><tbody>
+<tr><td><code>Scratchpad(4).txt</code></td><td><code>2026-10-27-daily.md</code></td><td>Date first, sorts forever</td></tr>
+<tr><td><code>notes about work</code></td><td><code>project-handover-guide.md</code></td><td>Front-loads the searchable word</td></tr>
+<tr><td><code>DRAFT final REAL.md</code></td><td><code>2026-11-kdp-paperback.md</code></td><td>Project + date; "final" is a trap</td></tr>
+<tr><td><code>Untitled.md</code></td><td><code>idea-skills-for-agents.md</code></td><td>"idea-" marks it as a [[fleeting-note]]</td></tr>
+</tbody>
+</table>
+<h2 id="two-naming-fields-to-know">Two naming fields to know</h2>
+<p>These recur across the manual and the [[glossary]]:</p>
+<ul><li><strong><code>YYYY-MM-DD</code></strong> — the date pattern for anything time-bound: <code>2026-03-14.md</code>.</li><li><strong><code>type-topic-slice</code></strong> — the pattern for idea notes: a type word</li></ul>
+<p>  (<code>idea-</code>, <code>ref-</code>, <code>howto-</code>), then the topic, optionally a narrow slice.<br>
+  Example: <code>ref-markdown-tables.md</code>.</p>
+<p>You do not need both everywhere. Pick the pattern that matches the file's<br>
+job: time-bound files get dates; timeless notes get the type/topic pair.</p>
+<h2 id="do-this-now-3-minutes">Do this now (3 minutes)</h2>
+<p>Look at today's folder (or your downloads folder — braver). Rename <strong>one</strong><br>
+file with the date-first rule. That is the habit: one rename a day shrinks<br>
+the mystery pile without ever feeling like a chore.</p><div class="pagenav"><a href="the-four-corners.html">← The Four Corners</a><a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>

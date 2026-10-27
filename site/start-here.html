@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start Here — Second Brain Basics</title>
+<style>
+:root { --ink:#2b2a27; --soft:#6b675e; --paper:#faf8f4; --card:#fff;
+  --line:#e5e1d8; --accent:#0f6b5c; --accent-soft:#e7f2ef; --code:#f1eee7; }
+* { box-sizing:border-box; }
+body { margin:0; font:17px/1.65 Georgia,'Times New Roman',serif;
+  color:var(--ink); background:var(--paper); }
+.wrap { max-width:960px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
+header.site { border-bottom:1px solid var(--line); padding-bottom:.75rem;
+  margin-bottom:2.5rem; }
+header.site .brand { font-size:1rem; letter-spacing:.02em;
+  color:var(--soft); text-decoration:none; }
+header.site .brand strong { color:var(--accent); }
+nav.chapters { font-size:.92rem; margin-top:1rem; display:flex;
+  flex-wrap:wrap; gap:.4rem 1.1rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+nav.chapters a { color:var(--soft); text-decoration:none;
+  border-bottom:2px solid transparent; }
+nav.chapters a:hover, nav.chapters a.active { color:var(--ink);
+  border-bottom-color:var(--accent); }
+h1, h2, h3 { font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;
+  line-height:1.25; }
+h1 { font-size:2.1rem; margin:.2rem 0 2rem; }
+h2 { font-size:1.4rem; margin:2.2rem 0 .6rem; }
+h3 { font-size:1.15rem; margin:1.8rem 0 .5rem; }
+p, li { max-width:70ch; }
+a { color:var(--accent); }
+blockquote { margin:1.5rem 0; padding:.9rem 1.2rem;
+  border-left:4px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 8px 8px 0; font-style:italic; }
+blockquote p { margin:0; }
+code { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:.88em;
+  background:var(--code); padding:.1em .35em; border-radius:4px; }
+pre { background:var(--code); padding:.9rem 1.1rem; border-radius:8px;
+  overflow-x:auto; line-height:1.5; }
+pre code { background:none; padding:0; }
+table { border-collapse:collapse; width:100%; margin:1.2rem 0;
+  font-size:.95rem; }
+th, td { border:1px solid var(--line); padding:.45rem .7rem;
+  text-align:left; vertical-align:top; }
+th { background:var(--code); }
+li { margin:.3rem 0; }
+hr { border:0; border-top:1px solid var(--line); margin:2.5rem 0; }
+.promised { color:var(--soft); font-style:italic; }
+footer.foot { margin-top:3rem; padding-top:1rem;
+  border-top:1px solid var(--line); color:var(--soft); font-size:.9rem;
+  font-family:'Segoe UI',system-ui,sans-serif; }
+.pagenav { display:flex; justify-content:space-between; gap:1rem;
+  margin-top:3rem; font-family:'Segoe UI',system-ui,sans-serif;
+  font-size:.95rem; }
+.pagenav a { text-decoration:none; }
+.card { background:var(--card); border:1px solid var(--line);
+  border-radius:10px; padding:1.3rem 1.6rem; margin:1.2rem 0; }
+.chapterlist li { border-bottom:1px dashed var(--line);
+  padding:.5rem 0; margin:0; }
+.chapterlist a { text-decoration:none; font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <a class="brand" href="index.html"><strong>Second Brain Basics</strong> —
+   a plain-file personal knowledge base</a>
+  <nav class="chapters"><a href="start-here.html" class="active">Start Here</a> | <a href="the-four-corners.html">The Four Corners</a> | <a href="naming-that-survives-years.html">Naming That Survives Years</a> | <a href="tags-vs-folders.html">Tags vs Folders: An Honest Comparison</a> | <a href="free-editors.html">Free Editors: Where to Write</a> | <a href="linking-ideas.html">Linking Ideas: The Little Web</a> | <a href="agent-help.html">Optional: Agent Help from Your Notes</a> | <a href="monthly-tidy.html">The Monthly Fifteen-Minute Tidy</a> | <a href="glossary.html">Glossary</a></nav>
+</header>
+<h1 id="start-here">Start Here</h1>
+<blockquote><p>A second brain is not a program you buy. It is a small habit of putting<br>
+thoughts in one trusted place, so your head is free to think instead of<br>
+remember.</p></blockquote>
+<p>Welcome. This manual teaches you how to keep a <strong>personal knowledge base</strong><br>
+using plain text files on your own computer. No subscription, no cloud<br>
+account, no app you have to learn like a video game. If you can save a file,<br>
+you can do this.</p>
+<h2 id="why-plain-files">Why plain files?</h2>
+<ul><li><strong>They outlive everything.</strong> A <code>.txt</code> or <code>.md</code> file from 1995 still opens</li></ul>
+<p>  fine today. Apps come and go; text never dies.</p>
+<ul><li><strong>They are yours.</strong> Your notes live in a folder you control. Back them up</li></ul>
+<p>  like photos, and they are safe.</p>
+<ul><li><strong>They are light.</strong> No loading screens, no logins, no " SYNCING… " bars.</li></ul>
+<p>  A note opens as fast as you can read it.</p>
+<h2 id="who-this-is-for">Who this is for</h2>
+<p>Anyone who has too many open browser tabs in their brain. Shift workers,<br>
+students, writers, parents, anyone with a busy life and a full mental white-<br>
+board. Every chapter is written to be read in one short sitting — on a break,<br>
+on a commute, in a waiting room. Nothing here assumes you are a programmer.</p>
+<h2 id="the-whole-system-in-one-paragraph">The whole system in one paragraph</h2>
+<p>Keep one folder (the <strong>vault</strong>) with four areas: a <strong>daily note</strong> you open<br>
+every day (your landing pad), a <strong>fleeting</strong> pile for raw thoughts, a<br>
+<strong>projects</strong> shelf for the few things you are actively working on, and an<br>
+<strong>archive</strong> for everything finished or cold. Give files calm, boring names.<br>
+Link ideas together with simple wiki-style <code>[[links]]</code>. Spend fifteen<br>
+minutes a month tidying, not more. That is the entire method. The rest of<br>
+this manual just explains each piece and how to set it up.</p>
+<h2 id="how-to-read-this-manual">How to read this manual</h2>
+<p>Read the chapters in order the first time. Each one ends with a short<br>
+"Do this now" step so you make real progress instead of just nodding.</p>
+<ol><li>&lt;a href="the-four-corners.html"&gt;the four corners&lt;/a&gt; — the four folders that hold your life</li><li>&lt;a href="naming-that-survives-years.html"&gt;naming that survives years&lt;/a&gt; — file names you will not hate in 2036</li><li>&lt;a href="tags-vs-folders.html"&gt;tags vs folders&lt;/a&gt; — the honest comparison, no religion</li><li>&lt;a href="free-editors.html"&gt;free editors&lt;/a&gt; — where to write, for free, on any device</li><li>&lt;a href="linking-ideas.html"&gt;linking ideas&lt;/a&gt; — turning notes into a web, not a shoebox</li><li>&lt;a href="agent-help.html"&gt;agent help&lt;/a&gt; — optional: letting an AI assistant tidy your notes</li><li>&lt;a href="monthly-tidy.html"&gt;monthly tidy&lt;/a&gt; — the fifteen-minute ritual that keeps it alive</li><li>&lt;a href="glossary.html"&gt;glossary&lt;/a&gt; — every term, in plain words</li></ol>
+<h2 id="do-this-now-2-minutes">Do this now (2 minutes)</h2>
+<p>Make the folder. Anywhere you like — Documents, Desktop, a synced drive.</p>
+<pre><code>my-second-brain/</code></pre>
+<p>That is it. In the next chapter we fill it with four folders and your first<br>
+daily note. Nothing fancier than that is required — it counts, and it is<br>
+the whole system already, just empty. Small steps count double when you<br>
+are tired.</p>
+<hr>
+<p>*If you get stuck anywhere: your system does not need to be perfect to be<br>
+useful. A slightly messy notebook you actually open beats a beautiful one<br>
+you dread.*</p><div class="pagenav"><span></span><a href="the-four-corners.html">The Four Corners →</a></div>
+<footer class="foot">
+  Second Brain Basics · MIT License · Copyright (c) 2026 Asdale Dynamics, LLC
+</footer>
+</div>
+</body>
+</html>
